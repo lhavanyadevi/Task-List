@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Web App</h1>
+        <p>This is a simple HTML application hosted on Tomcat.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+            <label for="new-task">New Task:</label>
+            <input type="text" id="new-task" name="new-task">
+
+            <button type="submit">Submit</button>
+        </form>
+        <form>
+            <label for="retrieve-name">Name:</label>
+            <input type="text" id="retrieve-name" name="retrieve-name">
+
+            <label for="retrieve-age">Age:</label>
+            <input type="number" id="retrieve-age" name="retrieve-age">
+
+            <button type="submit">Retrieve</button>
+
+            <label for="reserved-task">Reserved Task:</label>
+            <input type="text" id="reserved-task" name="reserved-task">
+        </form>
+    </div>
+</body>
+</html>

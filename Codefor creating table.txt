@@ -1,0 +1,9 @@
+    CREATE TABLE Customers (
+
+        Name VARCHAR(50) NOT NULL,
+
+        CustomerID INT PRIMARY KEY,
+
+        Task VARCHAR(500)
+
+    );
