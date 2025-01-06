@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Web App</h1>
+        <p>This is a simple HTML application hosted on Tomcat.</p>
+        <form action="/server.js">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+            <label for="new-task">New Task:</label>
+            <input type="text" id="new-task" name="new-task">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
