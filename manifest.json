@@ -1,0 +1,10 @@
+applications:
+  - name: flask-postgresql-app
+    memory: 512M
+    instances: 1
+    buildpacks:
+      - python_buildpack
+    env:
+      FLASK_ENV: production
+      DATABASE_URL: postgres://<username>:<password>@<host>:<port>/<database_name>
+      SECRET_KEY: your-secret-key
